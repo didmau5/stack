@@ -14,21 +14,22 @@ int Stack::GetSize()
 {
 	return size;
 }
-
-void Stack::SetSize(int newSize)
-{
-	size = newSize;
-}
 		
 void Stack::Print()
 {
 	cout << size << endl;
 	
 }
+
+void Stack::Push(double data)
+{
+	stack.insertAtHead(data);
+	size++;
+}
 		
 		/*GetSize(Stack *stack);
 		SetSize(Stack *stack);
-		Push();
+		
 		Pop();
 		Print();*/
 

@@ -22,7 +22,6 @@ LList::LList()
 //returns -1 on failure, 0 on success
 int LList::insertAtHead(double data)
 {
-	
 	Node *newNode = (Node*)malloc(sizeof(Node));
 	//if malloc succeeded (newNode not NULL)
 	if(newNode){
@@ -45,6 +44,5 @@ void LList::printList()
 	while(currentNode){
 		cout<<currentNode->data<<endl;
 		currentNode = currentNode->next;
-	}
-	
+	}	
 }
