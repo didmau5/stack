@@ -1,7 +1,9 @@
 #include <iostream>        // This is a key C++ library
 #include <cmath> 
 #include "stack.h"
-//#include "stack.cpp"
+#include "LList.h"
+#include "stack.cpp"
+#include "LList.cpp"
 
 using namespace std;
 
@@ -13,7 +15,11 @@ int main ()
 	//Stack stack;
 	//stack.Print();
 	
-	LList stack;
+	LList list;
+	list.insertAtHead(1.0);
+	list.insertAtHead(1.1);
+	list.insertAtHead(1.2);
+	list.printList();
 	return 0;
 
 }

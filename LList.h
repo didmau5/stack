@@ -1,18 +1,21 @@
-#ifndef STACK_H
-#define STACK_H
+#ifndef LLIST_H
+#define LLIST_H
 
 class LList{
-
-	struct Node{
-		double data;
-		Node *next;
-	};
-
-	private:
-		int *head;
-		
+	
 	public:
+		struct Node{
+			double data;
+			Node *next;
+		};
+		
+		Node *head;
+		int length;
+		
 		LList();
+		//Node removeHead();
+		int insertAtHead(double data);
+		void printList();
 		
 	
 };		
