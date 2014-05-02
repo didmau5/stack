@@ -3,18 +3,20 @@
 
 class Stack{
 
-private:
-	int size;
+	private:
+		int size;
+		
+	public:
+		Stack();
+		int GetSize();
+		void SetSize(int newSize);
+		void Print();
 	
-public:
-	Stack();
-	int GetSize();
-	void SetSize(int newSize);
 };		
 #endif	
 		/*
 		Push();
 		Pop();
-		Print();*/
+		*/
 
 
