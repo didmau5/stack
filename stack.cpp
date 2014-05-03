@@ -35,6 +35,7 @@ double Stack::Pop()
 		return -1;
 	}
 	else{
+		size--;
 		return data;
 	}
 }

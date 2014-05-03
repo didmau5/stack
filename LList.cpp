@@ -38,6 +38,7 @@ double LList::removeHead()
 	if(head){
 		retVal = head->data;
 		head = head->next;
+		length--;
 		return retVal;
 	}
 	else{
