@@ -1,11 +1,10 @@
 all: stackRun
 
 
-stackRun: stackRun.cpp
+stackRun: LList.h LList.cpp stack.h stack.cpp stackRun.cpp
 	
-	g++ stack.h
+	g++ stack.h LList.h
 	g++ stackRun.cpp -o stackRun
 
 clean:
-
 	rm stackRun

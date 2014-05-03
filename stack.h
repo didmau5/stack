@@ -1,20 +1,20 @@
 #ifndef STACK_H
 #define STACK_H
+#include "LList.h"
 
 class Stack{
-
-private:
-	int size;
+	private:
+		int size;
 	
-public:
-	Stack();
-	int GetSize();
-	void SetSize(int newSize);
+	public:
+		LList stack;	
+		Stack();
+		int GetSize();
+		void Print();
+		void Push(double data);
+		double Pop();
 };		
 #endif	
-		/*
-		Push();
-		Pop();
-		Print();*/
+
 
 
