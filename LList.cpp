@@ -10,14 +10,8 @@ LList::LList()
 	length = 0;
 }
 
-//Remove Head of List
-//DONT FORGET TO FREE NODE
-/*Node LList::removeHead()
-{
 
 
-}
-*/
 //Insert at Head of List
 //returns -1 on failure, 0 on success
 int LList::insertAtHead(double data)
@@ -33,6 +27,22 @@ int LList::insertAtHead(double data)
 	}
 	else
 		return -1;
+}
+
+//Remove Head of List
+//DONT FORGET TO FREE NODE
+double LList::removeHead()
+{
+	//check for removing a null
+	double retVal;
+	if(head){
+		retVal = head->data;
+		head = head->next;
+		return retVal;
+	}
+	else{
+		return -1;
+	}
 }
 
 //prints list from head to end

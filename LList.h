@@ -13,8 +13,8 @@ class LList{
 		int length;
 		
 		LList();
-		//Node removeHead();
 		int insertAtHead(double data);
+		double removeHead();
 		void printList();
 		
 	

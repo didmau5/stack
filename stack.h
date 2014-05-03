@@ -12,10 +12,9 @@ class Stack{
 		int GetSize();
 		void Print();
 		void Push(double data);
+		double Pop();
 };		
 #endif	
-		/*
-		Pop();
-		*/
+
 
 

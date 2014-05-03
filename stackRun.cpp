@@ -15,6 +15,7 @@ int main ()
 	std::string popStr ("pop");
 	std::string quitStr ("quit");
 	double data;
+	double result;
 	std::string command;
 	
 	Stack testStack;
@@ -30,13 +31,14 @@ int main ()
 		if (pushStr.compare(command) == 0){
 			cout << "Enter double to push:" <<endl;
 			cin >>data;
-			cout << "pushing: " << data << endl;
+			cout << "PUSH: " << data << endl;
 			testStack.Push(data);
 			command = '\0';
 		}
 		//else pop, only 1 arguement
 		else if(popStr.compare(command) == 0 ){
-			cout << "popping" << endl;
+			result = testStack.Pop();
+			cout << "POP: "<< result << endl;
 		}
 			
 	}

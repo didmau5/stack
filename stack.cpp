@@ -26,6 +26,18 @@ void Stack::Push(double data)
 	stack.insertAtHead(data);
 	size++;
 }
+
+double Stack::Pop()
+{
+	double data = stack.removeHead();
+	if (data < 0){
+		cout << "Nothing in the Stack" << endl;
+		return -1;
+	}
+	else{
+		return data;
+	}
+}
 		
 		/*GetSize(Stack *stack);
 		SetSize(Stack *stack);
